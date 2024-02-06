@@ -1,0 +1,225 @@
+<!-- project_1.html -->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Project 1</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            /* Style for the modal */
+            .modal {
+              display: none;
+              position: fixed;
+              z-index: 1;
+              padding-top: 250px;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              overflow: auto;
+              background-color: rgba(0, 0, 0, 0.9);
+            }
+          
+            /* Style for the modal content */
+            .modal-content {
+              margin: auto;
+              display: block;
+              max-width: 200%;
+              max-height: 200%;
+            }
+          
+            /* Close button for the modal */
+            .close {
+              position: absolute;
+              top: 60px;
+              right: 35px;
+              color: #fff;
+              font-size: 30px;
+              font-weight: bold;
+              cursor: pointer;
+            }
+          </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="container">
+                <li><a href="project_fyp.html">Previous Project</a></li>
+                <li><a href="#top">Top</a></li>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="index.html#portfolio">Portflio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="project_2.html">Next Project</a></li>
+            </ul>
+        </nav>
+
+        <!-- Portfolio -->
+			<article id="portfolio" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Robotic Arm</h2>
+                        <h3>This is a group project aims to develop a versatile robotic arm equipped with an advanced end effector 
+                            for precise object retrieval from shelves at varying positions. The arm utilises Robotis 
+                            servo motors, enabling movement in a 3-dimensional spatial coordinate system.</h3>
+					</header>
+                    <div class="col-4 col-6-medium col-12-small">
+						<span class="image fit"><img src="images/project_1_ma4825/ma4825_grp.jpeg" alt="" /></span>
+                    <p><span style="color: #000000;">In this project, I am primarily in-charge of the CAD design for the end-effector for my robotic arm and conducting
+                        usage of the robot model in Robotic Operating System(ROS) for simulation with the help of ROS moveit.
+                    </span></p>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2" style="height: 750px;">
+								<a class="image featured"><img src="images/project_1_ma4825/end_effector CAD.png" alt="" style="object-fit: cover; height: auto; width: 100%;" />
+                                </a>
+								<h3>CAD Design for end-effector</h3>
+                                <p><span style="color: #000000;">The end-effector was designed with careful consideration of the limitations of the servo motors as well as for the 
+                                    task of collecting the items. The end-effector is equipped with a limit switch such that when an item is collect it will
+                                    trigger the limit swith allowing us to know that the item has been collected.</span>
+                                </p>
+							</article>
+						</div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2" style="height: 750px;">
+                                <a class="image featured"><img src="images/project_1_ma4825/Robotic_Arm_CAD.png" alt="" style="object-fit: cover; height: auto; width: 100%;"/>
+                                </a>
+                                <h3>Robot Arm CAD</h3>
+                                <p><span style="color: #000000;">This the final CAD design of the Robotic Arm with the end-effector, base and servo motor
+                                .</span></p>
+                            </article>
+                        </div>
+                    <div class="col-4 col-6-medium col-12-small">
+						<article class="box style2" style="height: 750px;">
+							<a class="image featured"><img src="images/project_1_ma4825/robot_arm_setup_1.jpeg" alt="" style="object-fit: cover; height: 500px; width: 100%;"/>
+                            </a>
+							<h3>Robot arm Set-up</h3>
+                            <p><span style="color: #000000;">This is the robot arm set-up. The robot arm servo motor is from Robotis, AX series.</span></p>
+						</article>
+					</div>
+                    <div class="col-4 col-6-medium col-12-small">
+						<article class="box style2" style="height: 1200px;">
+							<a class="image featured"><img src="images/project_1_ma4825/robot_arm_setup_2_motion.jpeg" alt="" style="object-fit: cover; height: 500px; width: 100%;"/>
+                            </a>
+							<h3>Robot arm in motion</h3>
+                            <p><span style="color: #000000;">Task of the robot arm is to collect item off the shelf</span></p>
+                            <p><span style="color: #000000;">With the knowledge and use of 
+                                inverse kinematics, the robot arm is able to move through a trajectory planned by sending angle values to the servo motor</span></p>
+						</article>
+					</div>
+                    <div class="col-4 col-6-medium col-12-small">
+						<article class="box style2" style="height: 1200px;">
+							<a class="image featured"><img src="images/project_1_ma4825/robot_arm_simulation_rviz.png" alt="" style="object-fit: cover; height: 500px; width: 100%;"/>
+                            </a>
+							<h3>Robot Arm in Rviz</h3>
+                            <p><span style="color: #000000;">Solidworks add-in called "SolidWorks to URDF Exporter" was used to allow for the convenient export of SW Parts and 
+                                Assemblies into a URDF file. The exporter will create a ROS-like package that contains a directory for meshes, 
+                                textures and robots (urdf files). </span></p>
+                            <p><span style="color: #000000;">The MoveIt Setup Assistant is a graphical user interface for configuring any robot for use with MoveIt. Its primary 
+                                function is generating a Semantic Robot Description Format (SRDF) file for your robot. Additionally, it generates other 
+                                necessary configuration files for use with the MoveIt pipeline. </span></p>
+						</article>
+					</div>
+                    <div class="col-4 col-6-medium col-12-small">
+						<article class="box style2" style="height: 1200px;">
+							<a class="image featured"><img src="images/project_1_ma4825/robot_arm_simulation_path.png" alt="" style="object-fit: cover; height: 500px; width: 100%;"/>
+                            </a>
+							<h3>Robot Arm Simulation</h3>
+                            <p><span style="color: #000000;">The robot arm is set to move to a designated position
+                                and with the help of ROS MoveIt, the trajectory will be planned</span></p>
+                            <p><span style="color: #000000;">For our robot arm task, the trajectory has been optimized to follow the most efficient 
+                                and collision-resistant path.</span></p>
+                            <p><span style="color: #000000;">The purpose of this simulation is for test run of the trajectory planning 
+                               such that there will be minimal damaged to the real-life robot arm.</span></p>
+						</article>
+					</div>
+                    <div class="col-4 col-6-medium col-12-small">
+						<article class="box style2" style="height: 600px;">
+							<a class="image featured"><img src="images/project_1_ma4825/ROS_MoveIt_System_architecture.png" alt="" style="object-fit: cover; height: 500px; width: 100%;"/>
+                            </a>
+							<h3>ROS MoveIt System Architecture </h3>
+                            <p><span style="color: #000000;"></span></p>
+						</article>
+					</div>
+                    <div class="col-4 col-6-medium col-12-small">
+						<article class="box2 style2" style="height: 600px;">
+							<a class="image featured"><img src="images/project_1_ma4825/ROS_MoveIt_node_system_architecture_.png" alt="" style="object-fit: cover; height: auto; width: 100%;"/>
+                            </a>
+							<h3>ROS MoveIt Node System Architecture</h3>
+                            <p><span style="color: #000000;"></span></p>
+						</article>
+					</div>
+
+                    <!-- video player -->
+                    <div class="col-12">
+                        <h3>Demo Video</h3>
+                        <video style="max-width: 100%; height: auto;" controls>
+                            <source src="images/project_1_ma4825/MA4825_Xbot_Demo_Video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- <iframe width="100%" height="700" src="https://www.youtube.com/embed/lkDrG7G77Fg?si=csV_0vji3uiO7md3" frameborder="0" allowfullscreen></iframe> -->
+                        <!-- <a href="#portfolio" class="button large scrolly">Back to top</a> -->
+                        </div>
+                        <div class="col-12"><a href="#portfolio" class="button large scrolly">Back to top</a>
+                        </div>
+                    </div>
+                </div>
+                </article>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>   
+        <script src="assets/js/main.js"></script>
+
+        <!-- Modal for image enlargement -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="enlargedImg">
+        </div>
+        <script>
+            // Function to open the modal with the clicked image
+                function openModal(event) {
+                // Get the src attribute of the clicked image
+                var imgSrc = event.target.src;
+
+                // Check if the imgSrc is undefined or null, and if so, try to get the src from the parent 'a' element
+                if (!imgSrc && event.target.parentElement.tagName.toLowerCase() === 'a') {
+                    imgSrc = event.target.parentElement.querySelector('img').src;
+                }
+
+                // Check if imgSrc is still undefined, exit the function
+                if (!imgSrc) {
+                    console.error('Image source is undefined.');
+                    return;
+                }
+
+                // Set the source of the enlargedImg element and display the modal
+                document.getElementById('enlargedImg').src = imgSrc;
+                document.getElementById('imageModal').style.display = 'block';
+                }
+
+                // Function to close the modal
+                function closeModal() {
+                document.getElementById('imageModal').style.display = 'none';
+                }
+
+                // Attach click event listeners to each image with the class 'image-featured'
+                document.addEventListener('DOMContentLoaded', function () {
+                var images = document.querySelectorAll('.image.featured img');
+                images.forEach(function (image) {
+                    image.addEventListener('click', openModal);
+                });
+
+                // Attach click event listener to close button in the modal
+                document.querySelector('.close').addEventListener('click', closeModal);
+                });
+
+
+        </script>   
+
+    </body>
+</html>
